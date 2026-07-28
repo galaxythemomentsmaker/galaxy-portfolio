@@ -104,12 +104,14 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 60px;
+padding:18px 70px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,.45);
-backdrop-filter:blur(10px);
+background:rgba(15,15,15,.18);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.08);
+transition:.4s;
 z-index:999;
 }
 
@@ -119,10 +121,10 @@ font-weight:bold;
 color:#ffc107;
 }
 
-.logo span{
-display:block;
-font-size:13px;
-color:#fff;
+.logo{
+font-size:34px;
+font-weight:800;
+color:#ffc107;
 letter-spacing:2px;
 }
 
@@ -135,12 +137,16 @@ gap:30px;
 .menu a{
 color:#fff;
 text-decoration:none;
-font-size:16px;
-transition:.3s;
+font-size:17px;
+font-weight:600;
+padding:8px 14px;
+border-radius:30px;
+transition:.35s;
 }
 
 .menu a:hover{
-color:#ffc107;
+background:#ffc107;
+color:#000;
 }
 @keyframes fadeUp{
 
