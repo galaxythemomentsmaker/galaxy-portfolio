@@ -89,9 +89,48 @@ color:#fff;
 border:2px solid #ffc107;
 }
 
-.secondary:hover{
-background:#ffc107;
-color:#000;
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#ffc107;
+}
+
+.logo span{
+display:block;
+font-size:13px;
+color:#fff;
+letter-spacing:2px;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.menu a{
+color:#fff;
+text-decoration:none;
+font-size:16px;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#ffc107;
 }
 
 </style>
@@ -99,7 +138,22 @@ color:#000;
 </head>
 
 <body>
+<nav class="navbar">
+    <div class="logo">
+        GALAXY
+        <span>The Moments Maker</span>
+    </div>
 
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
 <section class="hero">
 
 <div class="content">
